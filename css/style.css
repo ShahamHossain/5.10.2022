@@ -1,0 +1,31 @@
+.card1 {
+  padding: 10px 0 20px 0;
+}
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: aqua;
+  color: darkgreen;
+  border: 3px solid darkgreen;
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+.ab {
+  padding: 0 0 30px 0;
+}
+
+.p1 {
+  text-transform: capitalize;
+}
+.m {
+  padding: 20px 0;
+}
+.p2 {
+  text-transform: capitalize;
+}
+.p3 {
+  text-align: justify;
+}
+.tips {
+  margin-bottom: 30px;
+}

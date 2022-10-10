@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BT5</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <section class="my-4 card1">
+      <div class="container text-center card1">
+        <h2>card</h2>
+        <div class="row">
+          <div class="col-lg-4 offset-4">
+            <div class="card text-center">
+              <div class="card-header bg-danger">
+                <h1>this is card header</h1>
+              </div>
+              <img src="images/water.jpg" class="card-img-top" alt="dark" />
+              <div class="card-body">
+                <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur, deleniti?
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+              <div class="card-footer bg-danger">
+                <p>this is card footer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ab">
+      <div class="container">
+        <h2>collaps with anchor/button</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <div>
+              <a
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Link with href
+              </a>
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Button with data-bs-target
+              </button>
+            </div>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Some placeholder content for the collapse component. This panel
+                is hidden by default but revealed when the user activates the
+                relevant trigger.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mb-3">
+        <h2>Multiple targets</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <div>
+              <a
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                href="#multiCollapseExample1"
+                role="button"
+                aria-expanded="false"
+                aria-controls="multiCollapseExample1"
+                >Toggle first element</a
+              >
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#multiCollapseExample2"
+                aria-expanded="false"
+                aria-controls="multiCollapseExample2"
+              >
+                Toggle second element
+              </button>
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target=".multi-collapse"
+                aria-expanded="false"
+                aria-controls="multiCollapseExample1 multiCollapseExample2"
+              >
+                Toggle both elements
+              </button>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                  <div class="card card-body">
+                    Some placeholder content for the first collapse component of
+                    this multi-collapse example. This panel is hidden by default
+                    but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                  <div class="card card-body">
+                    Some placeholder content for the second collapse component
+                    of this multi-collapse example. This panel is hidden by
+                    default but revealed when the user activates the relevant
+                    trigger.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>dropdown-form</h2>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            data-bs-auto-close="outside"
+          >
+            Dropdown form
+          </button>
+          <form class="dropdown-menu p-4">
+            <div class="mb-3">
+              <label for="exampleDropdownFormEmail2" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleDropdownFormEmail2"
+                placeholder="email@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleDropdownFormPassword2" class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleDropdownFormPassword2"
+                placeholder="Password"
+              />
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="dropdownCheck2"
+                />
+                <label class="form-check-label" for="dropdownCheck2">
+                  Remember me
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center m">
+      <div class="container">
+        <h2>modal</h2>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          <p class="p1">registration for updates</p>
+        </button>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title fs-5" id="exampleModalLabel">
+                  <p class="p2">get the latest update</p>
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="p3">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae cupiditate sit culpa distinctio recusandae, voluptatem
+                  voluptate repellat alias, aut aliquam totam iure pariatur non?
+                  Autem in sed, itaque sequi facere quod magnam quis similique
+                  laboriosam provident magni animi odio nemo est saepe tempora!
+                  Ex enim unde doloribus nostrum cumque soluta.
+                </p>
+                <label for="modal-email" class="form-label"
+                  >your email addess:</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="modal-email"
+                  placeholder="e.g. shaham@example.com"
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>placeholder-glow</h2>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="card" aria-hidden="true">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title placeholder-glow">
+                  <span class="placeholder col-6"></span>
+                </h5>
+                <p class="card-text placeholder-glow">
+                  <span class="placeholder col-7"></span>
+                  <span class="placeholder col-4"></span>
+                  <span class="placeholder col-4"></span>
+                  <span class="placeholder col-6"></span>
+                  <span class="placeholder col-8"></span>
+                </p>
+                <a
+                  href="#"
+                  tabindex="-1"
+                  class="btn btn-primary disabled placeholder col-6"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container tips">
+        <h2>tooltips</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-title="it worked!"
+            >
+              hover the cursor
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- js links -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
